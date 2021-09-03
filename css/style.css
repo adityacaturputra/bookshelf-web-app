@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eeeeee;
+}
+
+header {
+    background: #3051e2;
+    padding: 16px;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    border:2px solid #a1a0ff;
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text],
+input[type=number],
+input[type=checkbox],
+input[type=date] {
+    font-family: Raleway;
+    background: #F5F1FF;
+    border: 2px solid #3051e2;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    font-family: Raleway;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border:2px solid #3051e2;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-submit:hover{
+    background: #3051e2;
+    color: white;
+}
+
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=checkbox],
+.btn-submit:focus{
+    outline: none;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.button {
+    font-family: Raleway;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border:2px solid #3051e2;
+    color: #3051e2;
+    font-size: 1em;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    background: #3051e2;
+    color: white;
+}
+
+
+.trash-button{
+    font-family: Raleway;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border:2px solid #ff0000;
+    font-size: 1em;
+    background: #ffbebe;
+    color: #3051e2;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.trash-button:hover {
+    background: #ff0000;
+    color: #eeeeee;
+    background-size: contain;
+}
+
+.trash-button:focus {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+.text-color {
+    color: #3051e2;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
